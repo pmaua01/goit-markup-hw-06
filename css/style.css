@@ -62,7 +62,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  height: 581px;
+
   width: 528px;
 
   background-color: var(--white-color);
@@ -71,8 +71,7 @@ img {
   border-radius: 4px;
 
   transition: transform 250ms linear;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 40px;
 }
 
 .modal-btn {
@@ -118,12 +117,26 @@ img {
 
 .lable-modal {
   /* outline: 1px solid green; */
+  position: relative;
 
   display: flex;
   flex-direction: column;
 
   width: 100%;
 
+  font-size: 12px;
+  line-height: 1.1;
+
+  letter-spacing: 0.01em;
+
+  color: var(--second--text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-top: 4px;
+}
+
+.form-modal-title {
   font-size: 12px;
   line-height: 1.1;
 
@@ -145,12 +158,10 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-position-form {
+/* .modal-position-form {
   position: relative;
   margin-top: 4px;
-
-  /* outline: 1px solid red; */
-}
+} */
 
 .icon-modal {
   /* outline: 1px solid green; */
@@ -226,7 +237,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  margin-bottom: 40px;
   margin-top: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -798,7 +808,7 @@ img {
 .signature {
   display: flex;
   color: var(--white-color);
-  margin-left: 93px;
+  margin-left: auto;
   align-items: flex-end;
 }
 
